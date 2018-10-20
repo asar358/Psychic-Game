@@ -1,0 +1,12 @@
+body {
+    background-color: rgba(101,155,242,.2);
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+p, h2 {
+    margin-left: 20px;
+}
