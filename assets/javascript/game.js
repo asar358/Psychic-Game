@@ -5,6 +5,7 @@ var compChoice = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M
     var ties = 0;
     var guessRemaining = 10
     var guessSoFar = [];
+    var userGuess = [];
 
     alert("Press Enter Key To Get Started");
 
@@ -18,11 +19,14 @@ var compChoice = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M
             wins++;
             guessRemaining = 9;
             guessSoFar.length = 0;
+            alert("You are smart!! You got me, " + wins + " wins for you "); 
+            
         }
         else if (guessRemaining == 0){
             losses++;
             guessRemaining = 9;
             guessSoFar.length = 0;
+            alert("Are you even trying??")
         }
         else if (userGuess !== computerGuess){
             guessRemaining--; 
